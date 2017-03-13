@@ -1,6 +1,6 @@
 import csv
 import psycopg2
-from databased import *
+
 
 conn = psycopg2.connect("dbname=sql_tour user=Friese host=/tmp/")
 cursor = conn.cursor()

@@ -1,5 +1,5 @@
 from os import system
-from databasing import *
+from databasing import conn, cursor, close_connection, write_csv_to_database
 
 
 def clear():
@@ -20,7 +20,8 @@ def check_content(cursor):
 
 def look_up_record(cursor):
     search = input("What bill are you looking for? ")
-    cursor.execute("SELECT * FROM life_saver WHERE LOWER(bill) = %s", (search.lower(), ))
+    cursor.execute("SELECT * FROM life_saver WHERE LOWER(bill) = %s",
+                   (search.lower(), ))
     try:
         result = cursor.fetchone()
         print('\nBill: ' + search)
