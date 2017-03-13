@@ -5,7 +5,7 @@
 
   Open your SQL client and create a database of your perferred name. Using the same name, open databasing.py in your preferred text editor and on line 8, change "..'dbname=sql_tour'.." to 'dbname=(Your database name)'.
 
-  Do the same with <user>.
+  Do the same with user on that line.
 
 ## File Names $ Descriptions:
 
